@@ -15,7 +15,6 @@
     </style>
 </head>
 <body>
-    <!-- Scena AR -->
     <a-scene embedded arjs>
         <!-- Model 3D -->
         <a-entity 
@@ -25,7 +24,8 @@
         </a-entity>
 
         <!-- Kamera AR -->
-        <a-camera position="0 0 0"></a-camera>
+        <!-- Możesz usunąć poniższą kamerę, jeśli problem będzie się powtarzał -->
+        <a-camera position="0 0 0" look-controls-enabled="false"></a-camera>
     </a-scene>
 </body>
 </html>
